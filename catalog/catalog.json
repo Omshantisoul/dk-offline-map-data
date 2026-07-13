@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": 1,
-  "generatedAt": "2026-07-13T00:00:00Z",
-  "hostingStatus": "pending_release_upload",
+  "catalogVersion": 2,
+  "generatedAt": "2026-07-13T01:29:05Z",
+  "hostingStatus": "verified_live",
   "regions": [
     { "regionId": "india", "parentRegionId": null, "type": "ROOT", "displayName": "India", "codes": {}, "displayOrder": 10 },
     { "regionId": "in", "parentRegionId": "india", "type": "COUNTRY", "displayName": "India", "codes": { "iso3166_1": "IN" }, "displayOrder": 10 },
@@ -28,7 +28,7 @@
       "tileSchemaId": "protomaps-basemap-v3",
       "styleProfileId": "protomaps_basic_no_labels_v1",
       "minAppVersionCode": 7,
-      "downloadUrl": null,
+      "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase6-test-maps-v1/florence-test-v1.pmtiles",
       "fileSizeBytes": 6601156,
       "sha256": "7190f3d807a62f4f012b574007c96b809f6842f45a6b0c508639331fc68fd30a",
       "bounds": { "west": 11.221144, "south": 43.745121, "east": 11.287543, "north": 43.789306, "crossesAntimeridian": false },
@@ -41,7 +41,7 @@
       "sourceUrl": "https://github.com/protomaps/PMTiles/blob/8b8ddea4dbff1b0104cf2bebf2f7ff35c91b41d5/spec/v3/protomaps%28vector%29ODbL_firenze.pmtiles",
       "dataTimestamp": "2024-08-07T04:00:00Z",
       "releaseNotes": "Accepted Phase 5 Florence developer-test package; bytes preserved exactly.",
-      "hostingStatus": "pending_release_upload",
+      "hostingStatus": "verified_live",
       "criticalExtensions": []
     },
     {
@@ -57,7 +57,7 @@
       "tileSchemaId": "openmaptiles-3.16.0",
       "styleProfileId": "openmaptiles_basic_no_labels_v1",
       "minAppVersionCode": 8,
-      "downloadUrl": null,
+      "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase6-test-maps-v1/bengaluru-central-test-v1.pmtiles",
       "fileSizeBytes": 10154053,
       "sha256": "1c6a0fe5de649181ea98b70b27a54d058ec8aae32a80a38c6103bb235580f6fd",
       "bounds": { "west": 77.55, "south": 12.92, "east": 77.68, "north": 13.05, "crossesAntimeridian": false },
@@ -70,7 +70,7 @@
       "sourceUrl": "https://download.geofabrik.de/asia/india/southern-zone-260701.osm.pbf",
       "dataTimestamp": "2026-07-01T20:22:00Z",
       "releaseNotes": "Fixed-bounds Bengaluru Central developer-test package.",
-      "hostingStatus": "pending_release_upload",
+      "hostingStatus": "verified_live",
       "criticalExtensions": []
     },
     {
@@ -86,7 +86,7 @@
       "tileSchemaId": "openmaptiles-3.16.0",
       "styleProfileId": "openmaptiles_basic_no_labels_v1",
       "minAppVersionCode": 8,
-      "downloadUrl": null,
+      "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase6-test-maps-v1/monaco-test-v1.pmtiles",
       "fileSizeBytes": 376528,
       "sha256": "aa85dbaedde977b0a57353b7d48fbb63037ecb7b9b3b43347f6386eea9136338",
       "bounds": { "west": 7.409, "south": 43.7239999, "east": 7.44, "north": 43.752, "crossesAntimeridian": false },
@@ -99,7 +99,7 @@
       "sourceUrl": "https://download.geofabrik.de/europe/monaco-260701.osm.pbf",
       "dataTimestamp": "2026-07-01T20:22:00Z",
       "releaseNotes": "Fixed-bounds Monaco developer-test package.",
-      "hostingStatus": "pending_release_upload",
+      "hostingStatus": "verified_live",
       "criticalExtensions": []
     }
   ]
