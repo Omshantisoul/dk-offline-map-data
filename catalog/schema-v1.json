@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Omshantisoul/dk-offline-map-data/main/catalog/schema-v1.json",
+  "title": "DK Offline Map developer-test catalog schema v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "catalogVersion", "generatedAt", "hostingStatus", "regions", "packages"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "catalogVersion": { "type": "integer", "minimum": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "hostingStatus": { "enum": ["pending_release_upload", "verified_live"] },
+    "regions": { "type": "array", "items": { "$ref": "#/$defs/region" } },
+    "packages": { "type": "array", "items": { "$ref": "#/$defs/package" } }
+  },
+  "$defs": {
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["regionId", "parentRegionId", "type", "displayName", "codes", "displayOrder"],
+      "properties": {
+        "regionId": { "$ref": "#/$defs/safeId" },
+        "parentRegionId": { "oneOf": [{ "$ref": "#/$defs/safeId" }, { "type": "null" }] },
+        "type": { "enum": ["ROOT", "CONTINENT", "COUNTRY", "ADMIN1", "ADMIN2", "TEST_AREA"] },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "codes": { "type": "object", "additionalProperties": { "type": "string", "maxLength": 32 } },
+        "displayOrder": { "type": "integer" }
+      }
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["packageId", "regionId", "coverageRegionIds", "displayName", "assetName", "packageKind", "productionReady", "version", "format", "tileSchemaId", "styleProfileId", "minAppVersionCode", "downloadUrl", "fileSizeBytes", "sha256", "bounds", "minZoom", "maxZoom", "attribution", "licenseName", "licenseUrl", "sourceName", "sourceUrl", "dataTimestamp", "releaseNotes", "hostingStatus", "criticalExtensions"],
+      "properties": {
+        "packageId": { "$ref": "#/$defs/safeId" },
+        "regionId": { "$ref": "#/$defs/safeId" },
+        "coverageRegionIds": { "type": "array", "items": { "$ref": "#/$defs/safeId" }, "uniqueItems": true },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "assetName": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*\\.pmtiles$" },
+        "packageKind": { "enum": ["developer_test", "city", "district", "state", "country", "custom"] },
+        "productionReady": { "type": "boolean" },
+        "version": { "type": "integer", "minimum": 1 },
+        "format": { "const": "pmtiles-v3" },
+        "tileSchemaId": { "$ref": "#/$defs/safeId" },
+        "styleProfileId": { "$ref": "#/$defs/safeId" },
+        "minAppVersionCode": { "type": "integer", "minimum": 1 },
+        "downloadUrl": { "oneOf": [{ "type": "string", "format": "uri", "pattern": "^https://" }, { "type": "null" }] },
+        "fileSizeBytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "bounds": { "$ref": "#/$defs/bounds" },
+        "minZoom": { "type": "integer", "minimum": 0, "maximum": 30 },
+        "maxZoom": { "type": "integer", "minimum": 0, "maximum": 30 },
+        "attribution": { "type": "string", "minLength": 1 },
+        "licenseName": { "type": "string", "minLength": 1 },
+        "licenseUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "sourceName": { "type": "string", "minLength": 1 },
+        "sourceUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "dataTimestamp": { "type": "string", "format": "date-time" },
+        "releaseNotes": { "type": "string" },
+        "hostingStatus": { "enum": ["pending_release_upload", "verified_live"] },
+        "criticalExtensions": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "bounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["west", "south", "east", "north", "crossesAntimeridian"],
+      "properties": {
+        "west": { "type": "number", "minimum": -180, "maximum": 180 },
+        "south": { "type": "number", "minimum": -90, "maximum": 90 },
+        "east": { "type": "number", "minimum": -180, "maximum": 180 },
+        "north": { "type": "number", "minimum": -90, "maximum": 90 },
+        "crossesAntimeridian": { "const": false }
+      }
+    },
+    "safeId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$" }
+  }
+}
