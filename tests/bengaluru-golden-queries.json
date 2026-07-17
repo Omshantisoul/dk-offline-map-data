@@ -1,0 +1,10 @@
+{
+  "queries": [
+    {"query": "bengaluru", "expectedAnyName": ["Bengaluru"], "expectedCategory": "settlement"},
+    {"query": "bangalore", "expectedAnyName": ["Bengaluru"], "expectedCategory": "settlement"},
+    {"query": "ಬೆಂಗಳೂರು", "expectedAnyName": ["Bengaluru"], "expectedCategory": "settlement"},
+    {"query": "बेंगालुरू", "expectedAnyName": ["Bengaluru"], "expectedCategory": "settlement"},
+    {"query": "majestic metro", "expectedAnyName": ["Nadaprabhu Kempegowda Station, Majestic"], "expectedCategory": "railway_station"},
+    {"query": "majestic bus", "expectedAnyName": ["Kempegowda Bus Station"], "expectedCategory": "bus_station"}
+  ]
+}

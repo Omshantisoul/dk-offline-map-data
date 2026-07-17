@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": 2,
-  "generatedAt": "2026-07-13T01:29:05Z",
+  "catalogVersion": 3,
+  "generatedAt": "2026-07-17T14:44:00Z",
   "hostingStatus": "verified_live",
   "regions": [
     { "regionId": "india", "parentRegionId": null, "type": "ROOT", "displayName": "India", "codes": {}, "displayOrder": 10 },
@@ -42,6 +42,18 @@
       "dataTimestamp": "2024-08-07T04:00:00Z",
       "releaseNotes": "Accepted Phase 5 Florence developer-test package; bytes preserved exactly.",
       "hostingStatus": "verified_live",
+      "searchIndexId": "florence-test-search",
+      "searchSchemaVersion": 1,
+      "searchDataVersion": 1,
+      "searchUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase7-search-indexes-v1/florence-test-search-v1.sqlite",
+      "searchSizeBytes": 3411968,
+      "searchSha256": "7c8279c7425720e1ff8c1061275d5e0056ccb37d19c69d6a6278d519f7de1780",
+      "searchPackageId": "protomaps_firenze_developer_test",
+      "searchBounds": { "west": 11.221144, "south": 43.745121, "east": 11.287543, "north": 43.789306, "crossesAntimeridian": false },
+      "searchLanguages": ["it", "en"],
+      "searchFeatureClasses": ["atm", "bank", "bus_station", "education", "food", "fuel", "health", "hospital", "landmark", "lodging", "police", "railway_station", "road", "settlement", "vehicle"],
+      "searchDataTimestamp": "2026-07-01T20:22:00Z",
+      "searchAttribution": "© OpenStreetMap contributors",
       "criticalExtensions": []
     },
     {
@@ -71,6 +83,18 @@
       "dataTimestamp": "2026-07-01T20:22:00Z",
       "releaseNotes": "Fixed-bounds Bengaluru Central developer-test package.",
       "hostingStatus": "verified_live",
+      "searchIndexId": "bengaluru-central-test-search",
+      "searchSchemaVersion": 1,
+      "searchDataVersion": 1,
+      "searchUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase7-search-indexes-v1/bengaluru-central-test-search-v1.sqlite",
+      "searchSizeBytes": 18100224,
+      "searchSha256": "a16a41ebcf78c7f57c7531aae630aa82d99bb5a04678835ab7218e9246964b37",
+      "searchPackageId": "osm_in_ka_bengaluru_central_developer_test",
+      "searchBounds": { "west": 77.55, "south": 12.92, "east": 77.68, "north": 13.05, "crossesAntimeridian": false },
+      "searchLanguages": ["kn", "en", "hi"],
+      "searchFeatureClasses": ["atm", "bank", "bus_station", "education", "fire_station", "food", "fuel", "health", "hospital", "landmark", "lodging", "police", "railway_station", "road", "settlement", "vehicle"],
+      "searchDataTimestamp": "2026-07-01T20:22:00Z",
+      "searchAttribution": "© OpenStreetMap contributors",
       "criticalExtensions": []
     },
     {

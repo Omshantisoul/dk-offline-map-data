@@ -58,6 +58,18 @@
         "dataTimestamp": { "type": "string", "format": "date-time" },
         "releaseNotes": { "type": "string" },
         "hostingStatus": { "enum": ["pending_release_upload", "verified_live"] },
+        "searchIndexId": { "$ref": "#/$defs/safeId" },
+        "searchSchemaVersion": { "type": "integer", "minimum": 1 },
+        "searchDataVersion": { "type": "integer", "minimum": 1 },
+        "searchUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "searchSizeBytes": { "type": "integer", "minimum": 1 },
+        "searchSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "searchPackageId": { "$ref": "#/$defs/safeId" },
+        "searchBounds": { "$ref": "#/$defs/bounds" },
+        "searchLanguages": { "type": "array", "items": { "type": "string", "minLength": 2, "maxLength": 32 }, "uniqueItems": true },
+        "searchFeatureClasses": { "type": "array", "items": { "$ref": "#/$defs/safeId" }, "minItems": 1, "uniqueItems": true },
+        "searchDataTimestamp": { "type": "string", "format": "date-time" },
+        "searchAttribution": { "type": "string", "minLength": 1 },
         "criticalExtensions": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
       }
     },

@@ -8,4 +8,4 @@
 
 The OpenMapTiles packages include layers such as `boundary`, `building`, `landcover`, `landuse`, `place`, `transportation`, and `water`. Florence retains its original Protomaps layer schema.
 
-No Release URL is approved at this stage.
+The Release tagged `phase6-test-maps-v1` is live and independently verified. Canonical URLs are recorded in `catalog/catalog.json`; Range and full-file verification results are recorded in `documentation/HTTP-RANGE-VERIFICATION.md`.

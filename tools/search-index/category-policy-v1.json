@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "policyId": "dk-offline-search-categories-v1",
+  "namedFeaturesOnly": true,
+  "excludedAccessValues": ["private", "no"],
+  "categories": {
+    "settlement": {"displayGroup": "Places", "displayName": "Settlements", "iconKey": "place", "defaultImportance": 80},
+    "road": {"displayGroup": "Places", "displayName": "Roads", "iconKey": "road", "defaultImportance": 45},
+    "railway_station": {"displayGroup": "Transport", "displayName": "Railway stations", "iconKey": "train", "defaultImportance": 75},
+    "bus_station": {"displayGroup": "Transport", "displayName": "Bus stations", "iconKey": "bus", "defaultImportance": 70},
+    "transport": {"displayGroup": "Transport", "displayName": "Transport", "iconKey": "transport", "defaultImportance": 65},
+    "hospital": {"displayGroup": "Health", "displayName": "Hospitals", "iconKey": "hospital", "defaultImportance": 80},
+    "health": {"displayGroup": "Health", "displayName": "Health", "iconKey": "health", "defaultImportance": 65},
+    "police": {"displayGroup": "Safety", "displayName": "Police", "iconKey": "police", "defaultImportance": 75},
+    "fire_station": {"displayGroup": "Safety", "displayName": "Fire stations", "iconKey": "fire", "defaultImportance": 70},
+    "fuel": {"displayGroup": "Vehicle", "displayName": "Fuel", "iconKey": "fuel", "defaultImportance": 65},
+    "vehicle": {"displayGroup": "Vehicle", "displayName": "Vehicle services", "iconKey": "parking", "defaultImportance": 50},
+    "bank": {"displayGroup": "Finance", "displayName": "Banks", "iconKey": "bank", "defaultImportance": 60},
+    "atm": {"displayGroup": "Finance", "displayName": "ATMs", "iconKey": "atm", "defaultImportance": 55},
+    "education": {"displayGroup": "Education", "displayName": "Education", "iconKey": "school", "defaultImportance": 60},
+    "food": {"displayGroup": "Food", "displayName": "Food", "iconKey": "restaurant", "defaultImportance": 50},
+    "lodging": {"displayGroup": "Lodging", "displayName": "Lodging", "iconKey": "hotel", "defaultImportance": 55},
+    "landmark": {"displayGroup": "Landmarks", "displayName": "Landmarks", "iconKey": "landmark", "defaultImportance": 60}
+  }
+}

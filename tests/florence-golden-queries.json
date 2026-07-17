@@ -1,0 +1,10 @@
+{
+  "queries": [
+    {"query": "firenze", "expectedAnyName": ["Firenze"], "expectedCategory": "settlement"},
+    {"query": "flor", "expectedAnyName": ["Firenze"], "expectedCategory": "settlement"},
+    {"query": "caffe", "expectedAnyName": ["Antico Caffè"], "expectedCategory": "food"},
+    {"query": "santa maria nov", "expectedAnyName": ["Firenze Santa Maria Novella"], "expectedCategory": "railway_station"},
+    {"query": "ospedale santa maria", "expectedAnyName": ["Ospedale di Santa Maria Nuova"], "expectedCategory": "hospital"},
+    {"query": "via giovanni agn", "expectedAnyName": ["Via Giovanni Agnelli"], "expectedCategory": "road"}
+  ]
+}
