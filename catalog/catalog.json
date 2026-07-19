@@ -1,18 +1,89 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": 3,
-  "generatedAt": "2026-07-17T14:44:00Z",
+  "catalogVersion": 4,
+  "generatedAt": "2026-07-19T12:00:00Z",
   "hostingStatus": "verified_live",
   "regions": [
-    { "regionId": "india", "parentRegionId": null, "type": "ROOT", "displayName": "India", "codes": {}, "displayOrder": 10 },
-    { "regionId": "in", "parentRegionId": "india", "type": "COUNTRY", "displayName": "India", "codes": { "iso3166_1": "IN" }, "displayOrder": 10 },
-    { "regionId": "in-ka", "parentRegionId": "in", "type": "ADMIN1", "displayName": "Karnataka", "codes": { "iso3166_2": "IN-KA" }, "displayOrder": 10 },
-    { "regionId": "in-ka-bengaluru-central-test", "parentRegionId": "in-ka", "type": "TEST_AREA", "displayName": "Bengaluru Central Developer Test", "codes": {}, "displayOrder": 10 },
-    { "regionId": "world", "parentRegionId": null, "type": "ROOT", "displayName": "World", "codes": {}, "displayOrder": 20 },
-    { "regionId": "world-europe", "parentRegionId": "world", "type": "CONTINENT", "displayName": "Europe", "codes": {}, "displayOrder": 10 },
-    { "regionId": "it", "parentRegionId": "world-europe", "type": "COUNTRY", "displayName": "Italy", "codes": { "iso3166_1": "IT" }, "displayOrder": 10 },
-    { "regionId": "it-florence-test", "parentRegionId": "it", "type": "TEST_AREA", "displayName": "Florence Developer Test", "codes": {}, "displayOrder": 10 },
-    { "regionId": "mc", "parentRegionId": "world-europe", "type": "COUNTRY", "displayName": "Monaco", "codes": { "iso3166_1": "MC" }, "displayOrder": 20 }
+    {
+      "regionId": "india",
+      "parentRegionId": null,
+      "type": "ROOT",
+      "displayName": "India",
+      "codes": {},
+      "displayOrder": 10
+    },
+    {
+      "regionId": "in",
+      "parentRegionId": "india",
+      "type": "COUNTRY",
+      "displayName": "India",
+      "codes": {
+        "iso3166_1": "IN"
+      },
+      "displayOrder": 10
+    },
+    {
+      "regionId": "in-ka",
+      "parentRegionId": "in",
+      "type": "ADMIN1",
+      "displayName": "Karnataka",
+      "codes": {
+        "iso3166_2": "IN-KA"
+      },
+      "displayOrder": 10
+    },
+    {
+      "regionId": "in-ka-bengaluru-central-test",
+      "parentRegionId": "in-ka",
+      "type": "TEST_AREA",
+      "displayName": "Bengaluru Central Developer Test",
+      "codes": {},
+      "displayOrder": 10
+    },
+    {
+      "regionId": "world",
+      "parentRegionId": null,
+      "type": "ROOT",
+      "displayName": "World",
+      "codes": {},
+      "displayOrder": 20
+    },
+    {
+      "regionId": "world-europe",
+      "parentRegionId": "world",
+      "type": "CONTINENT",
+      "displayName": "Europe",
+      "codes": {},
+      "displayOrder": 10
+    },
+    {
+      "regionId": "it",
+      "parentRegionId": "world-europe",
+      "type": "COUNTRY",
+      "displayName": "Italy",
+      "codes": {
+        "iso3166_1": "IT"
+      },
+      "displayOrder": 10
+    },
+    {
+      "regionId": "it-florence-test",
+      "parentRegionId": "it",
+      "type": "TEST_AREA",
+      "displayName": "Florence Developer Test",
+      "codes": {},
+      "displayOrder": 10
+    },
+    {
+      "regionId": "mc",
+      "parentRegionId": "world-europe",
+      "type": "COUNTRY",
+      "displayName": "Monaco",
+      "codes": {
+        "iso3166_1": "MC"
+      },
+      "displayOrder": 20
+    }
   ],
   "packages": [
     {
@@ -31,7 +102,13 @@
       "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase6-test-maps-v1/florence-test-v1.pmtiles",
       "fileSizeBytes": 6601156,
       "sha256": "7190f3d807a62f4f012b574007c96b809f6842f45a6b0c508639331fc68fd30a",
-      "bounds": { "west": 11.221144, "south": 43.745121, "east": 11.287543, "north": 43.789306, "crossesAntimeridian": false },
+      "bounds": {
+        "west": 11.221144,
+        "south": 43.745121,
+        "east": 11.287543,
+        "north": 43.789306,
+        "crossesAntimeridian": false
+      },
       "minZoom": 0,
       "maxZoom": 15,
       "attribution": "Protomaps © OpenStreetMap contributors",
@@ -49,12 +126,72 @@
       "searchSizeBytes": 3411968,
       "searchSha256": "7c8279c7425720e1ff8c1061275d5e0056ccb37d19c69d6a6278d519f7de1780",
       "searchPackageId": "protomaps_firenze_developer_test",
-      "searchBounds": { "west": 11.221144, "south": 43.745121, "east": 11.287543, "north": 43.789306, "crossesAntimeridian": false },
-      "searchLanguages": ["it", "en"],
-      "searchFeatureClasses": ["atm", "bank", "bus_station", "education", "food", "fuel", "health", "hospital", "landmark", "lodging", "police", "railway_station", "road", "settlement", "vehicle"],
+      "searchBounds": {
+        "west": 11.221144,
+        "south": 43.745121,
+        "east": 11.287543,
+        "north": 43.789306,
+        "crossesAntimeridian": false
+      },
+      "searchLanguages": [
+        "it",
+        "en"
+      ],
+      "searchFeatureClasses": [
+        "atm",
+        "bank",
+        "bus_station",
+        "education",
+        "food",
+        "fuel",
+        "health",
+        "hospital",
+        "landmark",
+        "lodging",
+        "police",
+        "railway_station",
+        "road",
+        "settlement",
+        "vehicle"
+      ],
       "searchDataTimestamp": "2026-07-01T20:22:00Z",
       "searchAttribution": "© OpenStreetMap contributors",
-      "criticalExtensions": []
+      "criticalExtensions": [],
+      "routing": {
+        "routingPackageId": "florence-test-routing-v1",
+        "parentMapPackageId": "florence-test-v1",
+        "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase9-routing-data-v1/florence-test-routing-v1.zip",
+        "fileSizeBytes": 37186120,
+        "sha256": "3da87c3daa1775bb4b3a69ab4e80d03fad07bd729f465244d88b5767f58076ed",
+        "segmentFileName": "E10_N40.rd5",
+        "segmentSizeBytes": 37245666,
+        "segmentSha256": "39b1fdb3ea2e1512a5e61a8bb8319997a3c585680601832124c74ccd047f1c7d",
+        "sourceObservedBounds": {
+          "west": 11.221144,
+          "south": 43.745121,
+          "east": 11.287543,
+          "north": 43.789306
+        },
+        "sourceUrl": "https://download.geofabrik.de/europe/italy/centro-260701.osm.pbf",
+        "sourceSha256": "2c84214c99b21a2d89cf0b6479a248d3bab263751041c7f1c51cd2cff55ffae",
+        "hostingStatus": "verified_live",
+        "format": "brouter-rd5-zip-v1",
+        "routingSchemaVersion": 1,
+        "engine": {
+          "name": "BRouter",
+          "version": "1.7.10",
+          "commit": "4d2639af77ea5ed9c30d3e400764eb6f9e8522da"
+        },
+        "profiles": [
+          "trekking.brf",
+          "car-fast.brf"
+        ],
+        "elevationIncluded": false,
+        "licenseName": "BRouter MIT; OpenStreetMap ODbL 1.0",
+        "licenseUrl": "https://www.openstreetmap.org/copyright",
+        "attribution": "BRouter routing engine: MIT License; OpenStreetMap contributors, ODbL 1.0",
+        "coverageNote": "BRouter 5x5-degree segment populated by the approved extract; observed bounds are limited to the source extract and do not claim complete grid coverage."
+      }
     },
     {
       "packageId": "osm_in_ka_bengaluru_central_developer_test",
@@ -72,7 +209,13 @@
       "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase6-test-maps-v1/bengaluru-central-test-v1.pmtiles",
       "fileSizeBytes": 10154053,
       "sha256": "1c6a0fe5de649181ea98b70b27a54d058ec8aae32a80a38c6103bb235580f6fd",
-      "bounds": { "west": 77.55, "south": 12.92, "east": 77.68, "north": 13.05, "crossesAntimeridian": false },
+      "bounds": {
+        "west": 77.55,
+        "south": 12.92,
+        "east": 77.68,
+        "north": 13.05,
+        "crossesAntimeridian": false
+      },
       "minZoom": 0,
       "maxZoom": 14,
       "attribution": "© OpenMapTiles © OpenStreetMap contributors",
@@ -90,12 +233,74 @@
       "searchSizeBytes": 18100224,
       "searchSha256": "a16a41ebcf78c7f57c7531aae630aa82d99bb5a04678835ab7218e9246964b37",
       "searchPackageId": "osm_in_ka_bengaluru_central_developer_test",
-      "searchBounds": { "west": 77.55, "south": 12.92, "east": 77.68, "north": 13.05, "crossesAntimeridian": false },
-      "searchLanguages": ["kn", "en", "hi"],
-      "searchFeatureClasses": ["atm", "bank", "bus_station", "education", "fire_station", "food", "fuel", "health", "hospital", "landmark", "lodging", "police", "railway_station", "road", "settlement", "vehicle"],
+      "searchBounds": {
+        "west": 77.55,
+        "south": 12.92,
+        "east": 77.68,
+        "north": 13.05,
+        "crossesAntimeridian": false
+      },
+      "searchLanguages": [
+        "kn",
+        "en",
+        "hi"
+      ],
+      "searchFeatureClasses": [
+        "atm",
+        "bank",
+        "bus_station",
+        "education",
+        "fire_station",
+        "food",
+        "fuel",
+        "health",
+        "hospital",
+        "landmark",
+        "lodging",
+        "police",
+        "railway_station",
+        "road",
+        "settlement",
+        "vehicle"
+      ],
       "searchDataTimestamp": "2026-07-01T20:22:00Z",
       "searchAttribution": "© OpenStreetMap contributors",
-      "criticalExtensions": []
+      "criticalExtensions": [],
+      "routing": {
+        "routingPackageId": "bengaluru-central-test-routing-v1",
+        "parentMapPackageId": "bengaluru-central-test-v1",
+        "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase9-routing-data-v1/bengaluru-central-test-routing-v1.zip",
+        "fileSizeBytes": 48550828,
+        "sha256": "4ebcc9bb64d0253702d96dd231475c96168bdc3ddab7f6bd1d1b36f3d51f892e",
+        "segmentFileName": "E75_N10.rd5",
+        "segmentSizeBytes": 48576487,
+        "segmentSha256": "1d874f468753a0258a02c8c1d414f8591e0793ff07649c38ec99216207815e5a",
+        "sourceObservedBounds": {
+          "west": 77.55,
+          "south": 12.92,
+          "east": 77.68,
+          "north": 13.05
+        },
+        "sourceUrl": "https://download.geofabrik.de/asia/india/southern-zone-260701.osm.pbf",
+        "sourceSha256": "2e929462d4d232f8d1f2f3182481f8ba2656f0fa1677e2238e3fe0b73107195b",
+        "hostingStatus": "verified_live",
+        "format": "brouter-rd5-zip-v1",
+        "routingSchemaVersion": 1,
+        "engine": {
+          "name": "BRouter",
+          "version": "1.7.10",
+          "commit": "4d2639af77ea5ed9c30d3e400764eb6f9e8522da"
+        },
+        "profiles": [
+          "trekking.brf",
+          "car-fast.brf"
+        ],
+        "elevationIncluded": false,
+        "licenseName": "BRouter MIT; OpenStreetMap ODbL 1.0",
+        "licenseUrl": "https://www.openstreetmap.org/copyright",
+        "attribution": "BRouter routing engine: MIT License; OpenStreetMap contributors, ODbL 1.0",
+        "coverageNote": "BRouter 5x5-degree segment populated by the approved extract; observed bounds are limited to the source extract and do not claim complete grid coverage."
+      }
     },
     {
       "packageId": "osm_mc_monaco_developer_test",
@@ -113,7 +318,13 @@
       "downloadUrl": "https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase6-test-maps-v1/monaco-test-v1.pmtiles",
       "fileSizeBytes": 376528,
       "sha256": "aa85dbaedde977b0a57353b7d48fbb63037ecb7b9b3b43347f6386eea9136338",
-      "bounds": { "west": 7.409, "south": 43.7239999, "east": 7.44, "north": 43.752, "crossesAntimeridian": false },
+      "bounds": {
+        "west": 7.409,
+        "south": 43.7239999,
+        "east": 7.44,
+        "north": 43.752,
+        "crossesAntimeridian": false
+      },
       "minZoom": 0,
       "maxZoom": 14,
       "attribution": "© OpenMapTiles © OpenStreetMap contributors",
