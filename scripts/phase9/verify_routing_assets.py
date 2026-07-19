@@ -93,7 +93,7 @@ def main():
   with zipfile.ZipFile(br) as z: z.extractall(bp)
   jar=next(bp.rglob('brouter-1.7.10-all.jar'),None)
   if not jar: raise ValueError('BRouter all jar not found')
-     lookup=next(bp.rglob('lookups.dat'),None)
+  lookup=next(bp.rglob('lookups.dat'),None)
   if not lookup: raise ValueError('BRouter lookups.dat not found')
   javac=subprocess.run(['javac','-d',str(tmp),'-cp',str(jar),str(Path(__file__).with_name('BRouterCliProbe.java'))],cwd=tmp,text=True,capture_output=True)
   if javac.returncode: raise RuntimeError(javac.stderr)
