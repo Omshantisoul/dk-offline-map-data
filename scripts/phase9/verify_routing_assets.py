@@ -93,11 +93,14 @@ def main():
   with zipfile.ZipFile(br) as z: z.extractall(bp)
   jar=next(bp.rglob('brouter-1.7.10-all.jar'),None)
   if not jar: raise ValueError('BRouter all jar not found')
+     lookup=next(bp.rglob('lookups.dat'),None)
+  if not lookup: raise ValueError('BRouter lookups.dat not found')
   javac=subprocess.run(['javac','-d',str(tmp),'-cp',str(jar),str(Path(__file__).with_name('BRouterCliProbe.java'))],cwd=tmp,text=True,capture_output=True)
   if javac.returncode: raise RuntimeError(javac.stderr)
   for label,c in ASSETS.items():
    # Re-extract verified asset for a completely local, no-network route check.
    root=tmp/(label+'-route'); root.mkdir(); safe_extract(tmp/f'{label}.zip',root,{'manifest.json','attribution.txt','BRouter-MIT-LICENSE.txt','car-fast.brf','generation-commands.txt',c['segment'],'osm-source-notice.txt','profile-license-notice.txt','trekking.brf'})
+   shutil.copy2(lookup,root/'lookups.dat')
    cp=f'{tmp}{os.pathsep}{jar}'
    x,y,z,w=c['points']; p=subprocess.run(['java','-cp',cp,'BRouterCliProbe',str(root/c['profile']),str(root),str(x),str(y),str(z),str(w)],text=True,capture_output=True)
    line=p.stdout.strip().splitlines()[-1] if p.stdout.strip() else ''
