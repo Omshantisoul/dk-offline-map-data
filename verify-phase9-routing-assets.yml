@@ -1,0 +1,27 @@
+name: Verify Phase 9 routing assets
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout verification scripts
+        uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Verify live assets, ranges, archives and offline routes
+        run: |
+          python3 scripts/phase9/verify_routing_assets.py \
+            --out artifacts/phase9-routing-verification
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase9-routing-verification
+          path: artifacts/phase9-routing-verification
+          if-no-files-found: error
