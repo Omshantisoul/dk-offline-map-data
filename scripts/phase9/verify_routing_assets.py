@@ -8,7 +8,7 @@ ASSETS = {
  "florence": {"url":"https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase9-routing-data-v1/florence-test-routing-v1.zip", "size":37186120, "sha256":"3da87c3daa1775bb4b3a69ab4e80d03fad07bd729f465244d88b5767f58076ed", "segment":"E10_N40.rd5", "profile":"trekking.brf", "points":(43.77,11.255,43.78,11.26)},
  "bengaluru": {"url":"https://github.com/Omshantisoul/dk-offline-map-data/releases/download/phase9-routing-data-v1/bengaluru-central-test-routing-v1.zip", "size":48550828, "sha256":"4ebcc9bb64d0253702d96dd231475c96168bdc3ddab7f6bd1d1b36f3d51f892e", "segment":"E75_N10.rd5", "profile":"car-fast.brf", "points":(12.95,77.55,13.02,77.62)},
 }
-BROUTER_URL="https://brouter.de/brouter_bin/brouter-1.7.10.zip"
+BROUTER_URL="https://github.com/abrensch/brouter/releases/download/v1.7.10/brouter-1.7.10.zip"
 BROUTER_SHA="023fec3ba997758e8cd7ab9e1bae52e962af3f00b57683e3de86b84ffad01532"
 
 def sha(p):
